@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+    <name>UniSender</name>
+    <author>Unisender Inc</author>
+    <creationDate>September, 2011</creationDate>
+    <copyright>(c)2011 All rights reserved.</copyright>
+    <license>GPLv3</license>
+    <authorEmail>vital.fadeev@gmail.com</authorEmail>
+    <version>1.0</version>
+    <description>UniSender integration</description>
+
+    <files>
+        <filename module="mod_unisender">mod_unisender.php</filename>
+        <filename>apiproxy.php</filename>
+        <filename>config.php</filename>
+        <filename>helper.php</filename>
+        <filename>unisender_class.php</filename>
+        <filename>stub.php</filename>
+        <filename>unisender_class.php</filename>
+        <folder>tmpl</folder>
+        <folder>element</folder>
+        <folder>img</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_unisender.ini</language>
+    </languages>
+
+    <config>
+    <fields name="params" addfieldpath="/modules/mod_unisender/element">
+    <fieldset name="basic">
+        <field name="UNISENDER_KEY" size="60" type="text" default="" label="Unisender API key" description="UniSender API key from unisender.com account" />
+        <field name="UNISENDER_LIST" size="1" type="list" default="" label="Subscriber list" description="" />
+        <field name="UNISENDER_GROUP" size="1" type="unisenderlist" label="Group" description="Group" />
+        <field type="spacer" />
+        <field name="UNISENDER_IMPORT" type="unisenderimport" label="Form" description="" />
+        <field name="UNISENDER_FORM" cols="40" rows="16" type="textarea" label="HTML" description="" filter="raw" />
+        <field name="UNISENDER_IMPORT_LIST" type="hidden"/>
+        <field name="UNISENDER_IMPORTED" type="hidden"/>
+        <field name="field_0_name" type="hidden"/>
+        <field name="field_0_title" type="hidden"/>
+        <field name="field_0_mand" type="hidden"/>
+        <field name="field_1_name" type="hidden"/>
+        <field name="field_1_title" type="hidden"/>
+        <field name="field_1_mand" type="hidden"/>
+        <field name="field_2_name" type="hidden"/>
+        <field name="field_2_title" type="hidden"/>
+        <field name="field_2_mand" type="hidden"/>
+        <field name="field_3_name" type="hidden"/>
+        <field name="field_3_title" type="hidden"/>
+        <field name="field_3_mand" type="hidden"/>
+        <field name="field_4_name" type="hidden"/>
+        <field name="field_4_title" type="hidden"/>
+        <field name="field_4_mand" type="hidden"/>
+        <field name="field_5_name" type="hidden"/>
+        <field name="field_5_title" type="hidden"/>
+        <field name="field_5_mand" type="hidden"/>
+        <field name="field_6_name" type="hidden"/>
+        <field name="field_6_title" type="hidden"/>
+        <field name="field_6_mand" type="hidden"/>
+        <field name="field_7_name" type="hidden"/>
+        <field name="field_7_title" type="hidden"/>
+        <field name="field_7_mand" type="hidden"/>
+        <field name="field_8_name" type="hidden"/>
+        <field name="field_8_title" type="hidden"/>
+        <field name="field_8_mand" type="hidden"/>
+        <field name="field_9_name" type="hidden"/>
+        <field name="field_9_title" type="hidden"/>
+        <field name="field_9_mand" type="hidden"/>
+    </fieldset>
+    </fields>
+    </config>
+</extension>

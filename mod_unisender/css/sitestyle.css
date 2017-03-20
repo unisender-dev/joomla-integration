@@ -1,0 +1,24 @@
+.us-subscribeform .us-subscribe-fields
+{
+    display: block;    
+}
+
+.us-subscribeform .us-subscribe-fields dt
+{
+    padding: 4px 0;
+}
+
+.us-subscribeform .us-subscribe-fields dd
+{
+    padding: 0;margin:0;
+}
+
+.us-subscribeform .us-submit
+{
+    padding: 4px 0;
+}
+
+.us-errors
+{
+    color:red;
+}
